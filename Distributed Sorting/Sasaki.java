@@ -1,7 +1,7 @@
 /*
 Author - Aditya Menon
-		 Dept. of Computer Science
-		 Indian Institute of Information Technology Sri City AP
+Dept. of Computer Science
+Indian Institute of Information Technology Sri City AP
 Date - 14 - 02 - 2019
 Problem Statement - Implement Sasaki's (n-1) distributed sorting algorithm
 					as a simulation for an input n which is the total number of elements
@@ -121,9 +121,9 @@ public class Sasaki {
 		for(int i = 0;i<length;i++) {
 			// int val = sc.nextInt();
 			int val = (new Random()).nextInt(10000); // random values from 0 to 99999 is chosen
-			if(i==0)								//for left extreme node
+			if(i==0)	//for left extreme node
 				arr[i]=new Node(Integer.MIN_VALUE,val,-1);
-			else if(i==length - 1)					//for right extreme node
+			else if(i==length - 1)	//for right extreme node
 				arr[i]=new Node(val,Integer.MAX_VALUE,0);
 			else
 				arr[i]=new Node(val,val,0);
